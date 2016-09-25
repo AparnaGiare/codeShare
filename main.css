@@ -1,7 +1,31 @@
+.button {
+ /*Step 2: Basic Button Styles*/
+ display: block;
+ height: 100px;
+ width: 300px;
+ background: #34696f;
+ border: 2px solid rgba(33, 68, 72, 0.59);
+ 
+ /*Step 3: Text Styles*/
+ color: rgba(0, 0, 0, 0.55);
+ text-align: center;
+ font: bold 3.2em/100px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+ 
+ /*Step 4: Fancy CSS3 Styles*/
+ background: linear-gradient(top, #34696f, #2f5f63);
+ border-radius: 50px;
+ box-shadow: 0 8px 0 #1b383b;
+ text-shadow: 0 2px 2px rgba(255, 255, 255, 0.2);
+}
+ 
+/*Step 3: Link Styling*/
+a.button {
+ text-decoration: none;
+}
+
 body {
 	margin: 0; padding: 0;
 	font: small "Lucida Grande", Arial, sans-serif;
-    background: #FFB26D;
 }
 #masthead {
 	margin-bottom: 1.75em; padding-top: 1px;
@@ -88,27 +112,59 @@ fieldset{
   width: 1%;
   height: 100%;
   background-color: red;
+  top: 220px;
+  left: 0px;
 }
 
 #medsProgress {
   position: relative;
-  width: 3em;
-  height: 50em;
-  background-color: #ddd;
-  float: right;
-
+  width: 8em;
+  height: 25em;
+  background-color: cornflowerblue;
+  top: 210px;
+  left: 0px;
+  border: 2px solid darkblue;
+  /*Step 4: Fancy CSS3 Styles*/
+ background: linear-gradient(top, #34696f, #2f5f63);
+ border-radius: 50px;
+ box-shadow: 8px 0 0 8px #1b383b;
+ border-left-color: black;
+}
+/* Pill Center Bar */
+.midBar{
+    position: relative;
+    width: 8em;
+    background: navy;
+    top: 150px;
+    left: 0px;
+    box-shadow: 3px 0 0 3px darkblue;
+    background: linear-gradient(top, bottom, darkblue, black);
+    text-align: center;
 }
 
 #medsBar {
   position: absolute;
   bottom: 0;
-  right:0;
-  width: 3em;
-  height: 1em;
+  right: -1;
+  width: 9em;
+  height: 4em;
   background-color: red;
- border-radius: 25em;
- box-shadow: inset 3px 3px 5px 6px darkred;
+  border-radius: 25em;
+  box-shadow: inset 2px 2px 5px 6px darkred;
+  
 
+}
+#pillText{
+ display: block;
+ height: 100px;
+ width: 300px;
+ background: #34696f;
+ border: 2px solid rgba(33, 68, 72, 0.59);
+
+    /*Step 3: Text Styles*/
+ color: rgba(0, 0, 0, 0.55);
+ text-align: center;
+ font: bold 3.2em/100px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 }
 .roundedBar{
  border-radius: 25em;
@@ -130,3 +186,15 @@ fieldset{
     top: 10;
     left: 70em;
 }
+.falling{
+    position: relative;
+  width: 600px;
+  height: 600px;
+position: relative;
+}
+
+.ui-progressbar-value {
+  transition: width 0.5s;
+  -webkit-transition: width 0.5s;
+}
+
